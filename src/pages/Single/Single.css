@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+  font-family: 'Righteous';
+}
+
+.pinCon {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.256);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.pinCon .col {
+  max-width: 50%;
+}
+
+.pinCon img {
+  border-radius: 1.5rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  margin: 0 1.5rem;
+}
+
+.icons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.icons i {
+  margin: 0rem 0.5rem;
+
+}
+
+.footer {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0rem 2rem;
+  background-color: white;
+}
+
+
+
+.grey {
+  background-color: rgba(128, 128, 128, 0.136) !important;
+  width: 80% !important;
+  max-width: 100% !important;
+  height: 7vh !important;
+}
+
+.pso {
+  z-index: 2;
+  position: absolute;
+  size: 1rem !important;
+  transform: translateX(-51px);
+}
+
+.content {
+  margin: 1rem 2rem;
+  height: calc(100% - 85px);
+  max-height: 85%;
+  overflow-y: auto;
+  width: 80%;
+
+}
+
+.collapsing {
+  height: 0;
+  opacity: 0;
+}
+
+.content a {
+  color: black;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.content h3 {
+  margin: 1rem 0;
+}
+
+.custom-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  padding: 5px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.custom-input-wrapper form {
+  display: flex;
+  width: 100%;
+}
+
+.custom-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.custom-send-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: -40px;
+  background-color: red;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: white;
+}
+
+.custom-send-button:focus {
+  outline: none !important;
+}
+
+.custom-send-button:hover {
+  background-color: rgb(176, 5, 5);
+}
+
+.bg {
+  background-color: white;
+}
+
+.right-card {
+  position: relative;
+  height: calc(100% - 120px);
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  border-radius: 50% !important;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.comment-text {
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: 0.5rem;
+}
+
+@keyframes wiggle {
+  20% {
+    transform: rotate(-16deg);
+  }
+
+  50% {
+    transform: rotate(16deg);
+  }
+
+  75% {
+    transform: rotate(13deg);
+  }
+
+  90% {
+    transform: rotate(-8deg);
+  }
+
+}
+
+.emoji-picker {
+  margin-right: 2.3rem;
+  border: none;
+  background-color: transparent;
+  font-size: x-large;
+  border-radius: 50%;
+}
+
+.emoji-picker:hover {
+  animation-name: wiggle;
+  animation-duration: .9s;
+}
+
+.tooltip-inner {
+  background-color: transparent !important;
+
+}
+
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-top .tooltip-arrow::before {
+  color: rgb(232, 232, 232) !important;
+}
+
+.left-top {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+}
+
+.back-button {
+  background-color: transparent;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.footer>.back-button {
+  margin-left: 10vw;
+}
+
+.footer>.back-button i {
+  transform: translateX(-1px);
+}
+
+.back-button:hover {
+  background: gainsboro;
+  border: 4px solid skyblue;
+}
+
+.like-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  align-items: flex-end;
+}

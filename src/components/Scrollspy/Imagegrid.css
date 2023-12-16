@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    font-family: 'Righteous';
+}
+
+.main {
+    display: flex;
+    height: 1086px;
+}
+
+.image-grid-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.image-grid-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.image-grid {
+    position: relative;
+    box-sizing: border-box;
+    width: 600px;
+    height: 700px;
+}
+
+.img-1 {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 180px;
+    height: 230px;
+}
+
+.img-2 {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+    width: 200px;
+    height: 230px;
+}
+
+.img-3 {
+    position: absolute;
+    width: 298px;
+    height: 400px;
+    cursor: pointer;
+    top: 150px;
+    left: 148px;
+}
+
+.img-4 {
+    position: absolute;
+    width: 164px;
+    height: 240px;
+    left: 400px;
+    top: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 4rem;
+    text-align: center;
+    color: #c31952 !important;
+}
+
+.desc {
+    text-align: center;
+    font-size: x-large;
+    color: #c31952 !important;
+    max-width: 400px;
+    margin-block: 2rem;
+}
+
+.side-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.explore {
+    display: flex;
+    height: 48px;
+    width: 12rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10rem;
+    justify-content: center;
+    align-items: center;
+}

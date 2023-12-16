@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    font-family: 'Righteous';
+}
+
+.bg_white {
+    -webkit-font-smoothing: antialiased;
+    color-scheme: dark;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: block !important;
+    height: calc(20vh + 140px) !important;
+    background-color: white;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    background-clip: padding-box;
+    background-color: gray;
+    border: 0;
+    box-sizing: initial;
+    cursor: pointer;
+    flex: 0 1 auto;
+    height: 12px;
+    margin-left: 3px;
+    margin-right: 3px;
+    opacity: 0.7;
+    padding: 0;
+    border-radius: 50% !important;
+    text-indent: -999px;
+    transition: opacity 0.6s ease;
+    width: 12px;
+}
+
+
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 15% !important;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--custom_color) !important;
+    text-align: center;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 15% !important;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    color: var(--custom_color) !important;
+}
+
+.covertext {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    margin-top: 50px;
+}
+
+.title {
+    font-family: Verdana;
+    font-weight: 600;
+    font-size: 60px;
+    color: #000000;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: Verdana;
+    font-size: 40px;
+    color: var(--custom_color) !important;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 5s 0.1s 1 forwards;
+}

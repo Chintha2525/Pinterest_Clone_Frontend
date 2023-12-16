@@ -198,7 +198,7 @@ const Single = () => {
 
                                                 {data.comments?.map(review => (
                                                     <div className='comment'>
-                                                        <Avatar src="/broken-image.jpg" />
+                                                        <Avatar />
                                                         <div className='comment-text'>
                                                             <span> <b>{review.username}</b> {review.commentText} </span>
                                                             <span> {getTimeSince(new Date(review.createdAt))} </span>

@@ -335,7 +335,9 @@ const Header = (props) => {
               <div className='header-profile'>
                 <Box sx={{ flexGrow: 0 }}>
                   <Tooltip title="Open settings">
-                      <Avatar onClick={handleOpenUserMenu} style={{ background: 'gray', fontSize: '18px', fontWeight: '500' }}>{user.Name.charAt(0).toUpperCase()}</Avatar>{/* </IconButton> */}
+                    <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                      <Avatar sx={{ width: 28, height: 28 }} style={{ background: 'gray', fontSize: '18px', fontWeight: '500' }}>{user.Name.charAt(0).toUpperCase()}</Avatar>
+                    </IconButton>
                   </Tooltip>
                   <Menu
                     sx={{ mt: '45px' }}

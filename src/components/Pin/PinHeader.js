@@ -6,10 +6,11 @@ import axios from "axios";
 import useFetch from "../../hooks/useFetch";
 import { hasValue } from "../../helper/hasValue"
 import { Config } from "../../config/config";
+import { useNavigate } from "react-router-dom";
 
 
 const PinHeader = (props) => {
-
+  const navigate = useNavigate()
   const [text, setText] = useState({
     text: "Save",
     style: {}
@@ -47,10 +48,7 @@ const PinHeader = (props) => {
           text: "Saved",
           style: { color: "white", backgroundColor: "black", border: "1px solid black" }
         })
-        setTimeout(() => {
-
-          window.location.reload()
-        }, 2000);
+        navigate(window.location.pathname, { replace: true });
       } catch (err) {
         console.error("Error saving pin:", err);
       }

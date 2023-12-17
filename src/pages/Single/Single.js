@@ -25,6 +25,7 @@ import Header from '../../components/Header/Header';
 import { Avatar } from '@mui/material';
 
 const Single = () => {
+    const navigate = useNavigate()
     const location = useLocation()
     const pid = location.pathname.split('/')[2]
     const url1 = `${Config.api}/pin/${pid}`
@@ -106,10 +107,7 @@ const Single = () => {
                     text: "Saved",
                     style: { color: "white", backgroundColor: "black", border: "black" }
                 })
-                setTimeout(() => {
-
-                    window.location.reload()
-                }, 2000);
+                navigate(window.location.pathname, { replace: true });
             } catch (err) {
                 console.log(err);
             }

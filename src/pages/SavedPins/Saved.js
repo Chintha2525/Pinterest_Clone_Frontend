@@ -57,7 +57,7 @@ const Saved = () => {
       >
 
         {src_link.map((link, index) => (
-          <Link key={link[1]} to={`pins/${link[1]}`}>
+          <Link key={link[1]} to={`/pins/${link[1]}`}>
             <Pin
               source={link[0]}
               key={link[1]}
